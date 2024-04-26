@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon (Concept Store)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header aria-label="Main website header">
+        <h1>Amazon (Concept Store)</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Products</h2>
+            <div id="product-list" aria-live="polite">
+                </div>
+        </section>
+        <section id="search" aria-labelledby="search-heading">
+            <h2 id="search-heading">Search</h2>
+            <form id="search-form" aria-label="Search product form">
+                <label for="search-bar">Search:</label>
+                <input type="text" id="search-bar" name="search" placeholder="Search for products">
+                <button type="submit">Go</button>
+            </form>
+            <div id="search-results" aria-live="polite">
+                </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2024 Amazon (Concept Store)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
